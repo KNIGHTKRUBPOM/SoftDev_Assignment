@@ -1,0 +1,214 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+
+body {
+  margin: 0;
+}
+
+.left, .right {
+  flex: 1;          /* แบ่งครึ่งเท่ากัน */
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+
+  background-size: cover;     /* ⭐ เต็มจอ */
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+/* LEFT */
+.left {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;  /* แนวนอน */
+  align-items: center;      /* แนวตั้ง */
+
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 60%;     /* ให้กินฝั่งซ้าย */
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center; /* กลางแนวตั้ง */
+  align-items: center;     /* กลางแนวนอน */
+
+  text-align: center;
+  color: white;
+}
+
+.overlay h1 {
+  font-size: 90px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.overlay p {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.line {
+  width: 100px;
+  height: 8px;
+  background: white;
+  margin: 32px auto 0; /* เส้นอยู่กลาง */
+  border-radius: 10px;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  height: 100%;
+  width: 50%;
+
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(-20px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 50px 40px;
+
+  border-radius: 10px;
+}
+
+.right h2 {
+  font-size: 40px;
+  height: 40px;
+  color: black;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.right input {
+  color: black;
+
+  padding: 15px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  height: 60px;
+  border-radius: 3px;
+
+  background: transparent;  
+  outline: none;
+}
+
+.forgot {
+  font-size: medium;
+  font-weight: lighter;
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+
+  align-self: flex-end;
+  margin-right: 100px;
+  margin-bottom: 45px;
+}
+
+button {
+  padding: 20px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  
+}
+.register span {
+  color: red;
+  cursor: pointer;
+}
+.register {
+  font-weight: bold;
+  color : black;
+  margin-top: auto;      /* ⭐ ดันลงล่าง */
+  text-align: center;    /* ⭐ กลาง */
+}
+
+.input-box {
+  color: black;
+  position: relative;
+  width: 80%;
+  margin-bottom: 25px;
+}
+
+.input-box input {
+  color: black;
+
+  width: 100%;
+  padding: 15px;
+
+  border-radius: 10px;
+  border: 2px solid black;
+
+  background: transparent;
+  outline: none;
+
+  font-size: 14px;
+}
+
+.icon {
+  position: absolute;
+  right: 15px;
+  top: 65%;
+  transform: translateY(-50%);
+
+  width: 30px;
+  height: 30px;
+
+  pointer-events: none; /* ⭐ กดทะลุได้ */
+}
+
+.login-btn {
+  width: 80%;
+  height: 70px;
+  padding: 15px;
+
+  background: red;
+  color: white;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 25px;
+  font-weight: lighter;
+  cursor: pointer;
+
+  margin-bottom: 30px;
+}
