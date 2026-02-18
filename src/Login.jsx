@@ -2,7 +2,6 @@ import "./Login.css";
 import bg from "./assets/BG.jpg";
 import mailIcon from "./assets/Mail.png";
 import eyeIcon from "./assets/Eyes.png";
-
 import { useNavigate } from "react-router-dom";
 
 function LoginPage() {
@@ -34,7 +33,7 @@ function LoginPage() {
           <img src={eyeIcon} className="icon" />
         </div>
 
-        <button className="forgot" onClick={() => navigate("/forgot-password")}>Forgot your password?</button>
+        <button className="forgot">Forgot your password?</button>
 
         {/* ⭐ ปุ่มเปลี่ยนหน้า */}
         <button className="login-btn" onClick={() => navigate("/home")}>

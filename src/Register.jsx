@@ -2,8 +2,10 @@ import styles from "./Register.module.css";
 import mailIcon from "./assets/Mail.png";
 import eyeIcon from "./assets/Eyes.png";
 import bgImage from "./assets/BG.jpg";
+import { useNavigate } from "react-router-dom";
 
 function Register() {
+  const navigate = useNavigate();
   return (
     <div
       className={styles.container}
@@ -28,11 +30,13 @@ function Register() {
           <img src={eyeIcon} />
         </div>
 
-        <button className={styles.button}>Signup</button>
+        <button className={styles.button} onClick={() => navigate("/home")} >Signup</button>
 
         <p className={styles.loginText}>
-          Already have an account? <span>Login</span>
+          Already have an account?{" "}
+          <span onClick={() => navigate("/")}>Login</span>
         </p>
+
       </div>
 
       {/* RIGHT */}
