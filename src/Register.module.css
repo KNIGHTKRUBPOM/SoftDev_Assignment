@@ -97,7 +97,7 @@
 }
 
 .button {
-  font-size: 15px;
+  font-size: 20px;
   width: 60%;
   height: 55px;
   background: red;
@@ -107,7 +107,12 @@
   margin-top: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
+
+  display: flex;              
+  align-items: center;        
+  justify-content: center;    
 }
+
 
 .button:hover {
   transform: translateY(-3px) scale(1.03);

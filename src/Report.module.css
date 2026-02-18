@@ -39,7 +39,7 @@
   padding: 15px 18px;
   border-radius: 30px;
   flex: 1;              
-  max-width: 500px;     
+  max-width: 825px;     
   border: black 2px solid;
   overflow: hidden;
 }
@@ -61,6 +61,7 @@
 }
 
 .navLinks {
+    
     display: flex;
     align-items: center;   
     gap: 50px;     
@@ -91,9 +92,9 @@
 }
 
 .signin {
-  background: transparent;      /* โปร่งใส */
-  border: 2px solid black;      /* ขอบดำ 2px */
-  color: black;                 /* ตัวอักษรสีดำ */
+  background: transparent;      
+  border: 2px solid black;      
+  color: black;                 
   padding: 8px 18px;
   border-radius: 6px;
   font-size: 16px;
@@ -133,7 +134,6 @@
   text-align: center;
 }
 
-/* ทำ overlay ไล่สีแดงเข้ม */
 .hero::before {
   content: "";
   position: absolute;
