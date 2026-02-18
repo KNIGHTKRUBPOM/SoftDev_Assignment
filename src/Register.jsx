@@ -13,7 +13,7 @@ function Register() {
     >
       {/* LEFT */}
       <div className={styles.left}>
-        <h1 className={styles.title}>Signup</h1>
+        <h1 className={styles.title}>Sign up</h1>
 
         <div className={styles.inputBox}>
           <input type="text" placeholder="Enter your email" />
