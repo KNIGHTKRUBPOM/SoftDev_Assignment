@@ -8,9 +8,11 @@ import { useNavigate } from "react-router-dom";
 
 function Report() {
   const navigate = useNavigate();
+
   return (
     <div className={styles.container}>
-      {/* NAVBAR */}
+      
+      {/* ================= NAVBAR ================= */}
       <div className={styles.navbar}>
         <img src={icon} className={styles.logo} alt="icon" />
 
@@ -22,12 +24,16 @@ function Report() {
         <div className={styles.navLinks}>
           <span>Home</span>
           <span>List</span>
-          <button className={styles.signin} onClick={() => navigate("/")}>Sign in</button>
-          <button className={styles.signup} onClick={() => navigate("/register")}>Sign up</button>
+          <button className={styles.signin} onClick={() => navigate("/")}>
+            Sign in
+          </button>
+          <button className={styles.signup} onClick={() => navigate("/register")}>
+            Sign up
+          </button>
         </div>
       </div>
 
-      {/* HERO */}
+      {/* ================= HERO ================= */}
       <div
         className={styles.hero}
         style={{ backgroundImage: `url(${bg})` }}
@@ -41,33 +47,47 @@ function Report() {
         <button className={styles.reportBtn}>Report</button>
       </div>
 
-      {/* LIST SECTION */}
+      {/* ================= LIST SECTION ================= */}
       <div className={styles.listSection}>
-        <h3>รายการแจ้งซ่อมทั้งหมด</h3>
+        
+        <div className={styles.content}>
+          
+          {/* 🔹 SIDEBAR */}
+          <div className={styles.sidebar}>
+            <h4>Sort by</h4>
 
-        <div className={styles.grid}>
-          <RepairCard
-            image={chair}
-            title="เก้าอี้ ห้อง 821"
-            status="pending"
-            date="10 ม.ค 2568"
-          />
+            <p>สถานะ</p>
+            <label><input type="checkbox" /> รอซ่อม</label>
+            <label><input type="checkbox" /> กำลังดำเนินการ</label>
+            <label><input type="checkbox" /> เสร็จสิ้น</label>
 
-          <RepairCard
-            image={chair}
-            title="เก้าอี้ ห้อง 821"
-            status="success"
-            date="10 ม.ค 2568"
-          />
+            <p>เรียง</p>
+            <label><input type="checkbox" /> เก่า - ใหม่</label>
+            <label><input type="checkbox" /> ใหม่ - เก่า</label>
+          </div>
 
-          <RepairCard
-            image={chair}
-            title="เก้าอี้ ห้อง 821"
-            status="repairing"
-            date="10 ม.ค 2568"
-          />
+          {/* 🔹 RIGHT */}
+          <div className={styles.rightContent}>
+            <h3>รายการแจ้งซ่อมทั้งหมด</h3>
+
+            <div className={styles.grid}>
+              <RepairCard image={chair} title="เก้าอี้ ห้อง 821" status="pending" date="10 ม.ค 2568" />
+              <RepairCard image={chair} title="เก้าอี้ ห้อง 821" status="success" date="10 ม.ค 2568" />
+              <RepairCard image={chair} title="เก้าอี้ ห้อง 821" status="repairing" date="10 ม.ค 2568" />
+              <RepairCard image={chair} title="เก้าอี้ ห้อง 821" status="pending" date="10 ม.ค 2568" />
+              <RepairCard image={chair} title="เก้าอี้ ห้อง 821" status="success" date="10 ม.ค 2568" />
+            </div>
+          </div>
+
         </div>
       </div>
+
+      {/* ================= FOOTER ================= */}
+      <div className={styles.footer}>
+        <p>ระบบรายงานครุภัณฑ์เสียหายภายในภาควิชาคอมพิวเตอร์ อาคาร ECC</p>
+        <span>Copyright ©2025 Buffer | Privacy | Terms | Security</span>
+      </div>
+
     </div>
   );
 }
