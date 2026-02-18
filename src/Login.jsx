@@ -1,4 +1,4 @@
-import "./App.css";
+import "./Login.css";
 import bg from "./assets/BG.jpg";
 import mailIcon from "./assets/Mail.png";
 import eyeIcon from "./assets/Eyes.png";
