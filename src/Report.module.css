@@ -176,7 +176,7 @@
 
 /* ================= LIST SECTION ================= */
 .listSection {
-  padding: 50px 60px;
+  padding: 30px 40px;
 }
 
 .listSection h3 {
@@ -184,12 +184,21 @@
   font-weight: 600;
 }
 
-/* Grid แบบ 4 คอลัมน์ */
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 8px;
 }
+
+.listSection {
+  padding: 30px 40px;
+}
+
+.card {
+  padding: 8px;
+}
+
+
 
 /* Responsive */
 @media (max-width: 1200px) {
@@ -225,7 +234,8 @@
     width: 220px;
     background: #e6e6e6;
     padding: 15px;
-    border-radius: 12px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
     margin-left: -45px;
 }
 

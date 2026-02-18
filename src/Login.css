@@ -71,6 +71,7 @@ body {
 .overlay h1,
 .overlay .line {
   transition: all 0.4s ease;
+  margin: 30px;
 }
 
 .overlay:hover p {
