@@ -103,7 +103,8 @@ body {
 
   padding: 50px 40px;
 
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .right h2 {
