@@ -33,15 +33,18 @@
 }
 
 .content {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .status {
-  padding: 3px 8px;
+  padding: 3px 30px;
   border-radius: 10px;
-  font-size: 12px;
+  font-size: 13px;
   display: inline-block;
-  margin-bottom: 5px;
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+  
 }
 
 .pending {
@@ -59,3 +62,8 @@
   color: white;
 }
 
+.title {
+  font-size: 17px;     /* 👈 ปรับขนาดตรงนี้ */
+  font-weight: 600;    /* ตัวหนา */
+  margin-top: 10px;
+}

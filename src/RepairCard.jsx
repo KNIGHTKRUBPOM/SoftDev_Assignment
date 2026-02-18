@@ -6,8 +6,8 @@ function RepairCard({ image, title, status, date }) {
       <img src={image} alt="repair" className={styles.image} />
 
       <div className={styles.content}>
-        <h4>{title}</h4>
-
+        <h4 className={styles.title}>{title}</h4>
+        สถานะแจ้งซ้อม :
         <span className={`${styles.status} ${styles[status]}`}>
           {status}
         </span>
