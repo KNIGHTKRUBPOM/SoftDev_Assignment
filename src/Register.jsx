@@ -30,7 +30,7 @@ function Register() {
           <img src={eyeIcon} />
         </div>
 
-        <button className={styles.button} onClick={() => navigate("/home")} >Sign up</button>
+        <button className={styles.button} onClick={() => navigate("/")} >Sign up</button>
 
         <p className={styles.loginText}>
           Already have an account?{" "}
