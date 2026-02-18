@@ -29,35 +29,54 @@
   color: white;
 }
 
+.right h1,
+.right h2,
+.line {
+  transition: all 0.4s ease;
+}
+
+.right:hover h1 {
+  transform: translateY(-8px) scale(1.05);
+}
+
+.right:hover h2 {
+  transform: translateY(-5px) scale(1.05);
+}
+
+.right:hover .line {
+  transform: translateX(6px) scaleX(1.4);
+}
+
 .text h1 {
+  margin: 25px;
   font-size: 48px;
   font-weight: bold;
 }
 
 .text h2 {
-  font-size: 40px;
+  font-size: 48px;
   font-weight: bold;
 }
 
 .line {
-  width: 60px;
-  height: 5px;
+  width: 80px;
+  height: 7px;
   background: white;
-  margin: 20px auto;
+  margin: 30px auto 0;
   border-radius: 10px;
 }
 
 .title {
   font-size: 36px;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 
 .inputBox {
   width: 60%;
   height: 55px;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 
   display: flex;
   align-items: center;
@@ -73,11 +92,12 @@
 }
 
 .inputBox img {
-  width: 20px;
+  width: 25px;
   cursor: pointer;
 }
 
 .button {
+  font-size: 15px;
   width: 60%;
   height: 55px;
   background: red;
@@ -86,6 +106,11 @@
   border-radius: 10px;
   margin-top: 20px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-3px) scale(1.03);
 }
 
 .button:active {
@@ -94,9 +119,11 @@
 
 .loginText {
   margin-top: 20px;
+  font-weight: bold;
 }
 
 .loginText span {
   color: red;
   cursor: pointer;
 }
+

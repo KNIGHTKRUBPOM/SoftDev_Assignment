@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 function LoginPage() {
   const navigate = useNavigate();
-
+  
   return (
     <div
       className="container"
@@ -30,7 +30,7 @@ function LoginPage() {
 
         <div className="input-box">
           <input type="password" placeholder="Enter your password" />
-          <img src={eyeIcon} className="icon" />
+          <img src={eyeIcon} className="icon"/>
         </div>
 
         <button className="forgot">Forgot your password?</button>

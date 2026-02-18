@@ -67,6 +67,24 @@ body {
   color: white;
 }
 
+.overlay p,
+.overlay h1,
+.overlay .line {
+  transition: all 0.4s ease;
+}
+
+.overlay:hover p {
+  transform: translateY(-2px) scale(1.05);
+}
+
+.overlay:hover h1 {
+  transform: translateY(-1px) scale(1.05);
+}
+
+.overlay:hover .line {
+  transform: translateX(6px) scaleX(1.2);
+}
+
 .overlay h1 {
   font-size: 7vw;
   font-weight: bold;
@@ -167,6 +185,7 @@ button {
   position: relative;
   width: 80%;
   margin-bottom: 25px;
+  
 }
 
 .input-box input {
@@ -193,7 +212,7 @@ button {
   width: 30px;
   height: 30px;
 
-  pointer-events: none; /* ⭐ กดทะลุได้ */
+  cursor: pointer;
 }
 
 .login-btn {
@@ -212,4 +231,13 @@ button {
   cursor: pointer;
 
   margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+}
+
+.login-btn:active {
+  transform: scale(0.97);
 }
