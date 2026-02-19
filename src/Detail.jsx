@@ -21,7 +21,7 @@ function Report() {
         </div>
 
         <div className={styles.navLinks}>
-          <span>Home</span>
+          <span onClick={() => navigate("/home")}>Home</span>
           <span>List</span>
           <button className={styles.signin} onClick={() => navigate("/")}>
             Sign in
