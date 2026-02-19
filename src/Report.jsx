@@ -3,7 +3,6 @@ import icon from "./assets/Icon.png";
 import searchIcon from "./assets/Search.jpg";
 import bg from "./assets/BG.jpg";
 import RepairCard from "./RepairCard";
-import chair from "./assets/BG.jpg"; 
 import { useNavigate } from "react-router-dom";
 
 function Report() {
@@ -14,7 +13,7 @@ function Report() {
       
       {/* ================= NAVBAR ================= */}
       <div className={styles.navbar}>
-        <img src={icon} className={styles.logo} alt="icon" />
+        <img src={icon} className={styles.logo} onClick={() => navigate("/home")} alt="icon" />
 
         <div className={styles.searchBox}>
           <input type="text" placeholder="Search here" />
@@ -66,7 +65,7 @@ function Report() {
             <label><input type="checkbox" /> ใหม่ - เก่า</label>
           </div>
 
-          {/* 🔹 RIGHT */}
+          {/* 🔹 RIGHT (ลบ div นี้ออกได้ layout ก็ไม่พัง) */}
           <div className={styles.rightContent}>
             <h3>รายการแจ้งซ่อมทั้งหมด</h3>
 
