@@ -5,6 +5,7 @@
   overflow: hidden;
   padding: 8px;
   transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .card:hover {
@@ -54,6 +55,11 @@
 
 .success {
   background: green;
+  color: white;
+}
+
+.waiting{
+  background: pink;
   color: white;
 }
 

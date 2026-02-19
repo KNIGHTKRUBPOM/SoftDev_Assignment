@@ -44,7 +44,7 @@ function Report() {
           ภาควิชาคอมพิวเตอร์ อาคาร ECC
         </h1>
 
-        <button className={styles.reportBtn}>Report</button>
+        <button className={styles.reportBtn} >Report</button>
       </div>
 
       {/* ================= LIST SECTION ================= */}
@@ -71,7 +71,7 @@ function Report() {
             <h3>รายการแจ้งซ่อมทั้งหมด</h3>
 
             <div className={styles.grid}>
-              <RepairCard image="https://down-th.img.susercontent.com/file/775968b8ea24bad829f0ef7da0e6cbe3" title="เก้าอี้ ห้อง 821" status="pending" date="10 ม.ค 2568" />
+              <RepairCard image="https://down-th.img.susercontent.com/file/775968b8ea24bad829f0ef7da0e6cbe3" title="เก้าอี้ ห้อง 821" status="waiting" date="10 ม.ค 2568" />
               <RepairCard image="https://www.dailynews.co.th/wp-content/uploads/2023/07/S__19194144.jpg" title="เก้าอี้ ห้อง 821" status="success" date="10 ม.ค 2568" />
               <RepairCard image="https://lh5.googleusercontent.com/proxy/4tBQNdq4m4owky7IsOdMw-M53vqPTgKu7i5kuijuKag0IQgIyuafEcmgWKBbE2nidlV2Clxi8KLMI4xEO1ul5TXo8bYsT3VXGhp39CH-3YG9xLQqAk2gyUltCHSVrqZAQEIFQKiQXdImUziYmpkC5jAYnjOFQUTUCeo" title="เก้าอี้ ห้อง 821" status="repairing" date="10 ม.ค 2568" />
               <RepairCard image="https://hilight.kapook.com/img_cms2/user/rungtip/2019/3_99.jpg" title="เก้าอี้ ห้อง 821" status="pending" date="10 ม.ค 2568" />
