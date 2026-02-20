@@ -7,7 +7,7 @@ function RepairCard({ image, title, status, date }) {
   return (
     <div
       className={styles.card}
-      onClick={() => navigate("/detail")} // กดแล้วไปหน้าอื่น
+      
     >
       <img src={image} alt="repair" className={styles.image} />
 
