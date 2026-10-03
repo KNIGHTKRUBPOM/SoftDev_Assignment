@@ -1,16 +1,80 @@
-# React + Vite
+# 📋 Issue Reporting & Authentication Portal
+### *Software Development Practicum & Modern React SPA*
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![React 19](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![React Router](https://img.shields.io/badge/React_Router-v7.13-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white)](https://reactrouter.com/)
+[![Vite](https://img.shields.io/badge/Vite-7.3-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
-Currently, two official plugins are available:
+A Single Page Application (SPA) engineered with **React 19**, **React Router v7**, and **Vite** demonstrating client-side authentication routing, interactive form validation, and an issue/incident reporting management dashboard.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🌟 Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🔐 **Authentication Flow:** Dedicated Login and Registration views with client-side credential verification and route protection.
+- 📝 **Incident & Issue Reporting:** Interactive submission form supporting problem categorization, severity rating, and descriptive detail inputs.
+- ⚡ **React 19 & React Router 7:** Utilizes modern declarative routing with nested layout structures and instant view switching without full-page reloads.
+- 📱 **Responsive Interface:** Custom component styling ensuring seamless usability across desktop and mobile form factors.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+| Technology | Role |
+| :--- | :--- |
+| **React 19** | Component-driven UI library & state management hooks (`useState`, `useEffect`) |
+| **React Router v7** | Client-side routing, route guard navigation, and programmatic redirects |
+| **Vite 7** | Next-generation frontend tooling and Hot Module Replacement (HMR) |
+| **CSS3** | Modern responsive layouts and interactive transitions |
+
+---
+
+## 📁 Project Structure
+
+```text
+src/
+├── App.jsx              # Application routing table (Routes & Route configuration)
+├── main.jsx             # React DOM root mounting and BrowserRouter provider
+├── Login.jsx            # User authentication sign-in screen
+├── Register.jsx         # New user registration screen
+├── Report.jsx           # Issue reporting and tracking dashboard
+├── App.css              # Global layout and UI theme styles
+└── index.css            # Base stylesheet reset
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v18.0.0 or later)
+- npm or yarn
+
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/KNIGHTKRUBPOM/SoftDev_Assignment.git
+
+# Navigate to project directory
+cd SoftDev_Assignment
+
+# Install dependencies
+npm install
+```
+
+### Development
+```bash
+npm run dev
+```
+Open your browser at `http://localhost:5173`.
+
+### Production Build
+```bash
+npm run build
+```
+
+---
+
+## 📄 License
+This project is open-source under the [MIT License](LICENSE).
